@@ -1,0 +1,210 @@
+/* wrapper_e */
+.wrapper_e{
+    max-width: 1000px;
+    width: 100%;
+    background: #fff; /* สี */
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    padding: 30px;
+  }
+  
+  .wrapper_e .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--first-color);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+
+  .wrapper_e .form{
+    width: 100%;
+  }
+  
+  .wrapper_e .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper_e .form .inputfield label{
+     width: 200px;
+     color: #757575;
+     margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .wrapper_e .form .inputfield .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper_e .form .inputfield .custom_select{
+    position: static;
+    width: 100%;
+    height: 37px;
+  }
+  
+  .wrapper_e .form .inputfield .custom_select select{
+
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  
+  .wrapper_e .form .inputfield .input:focus,
+  .wrapper_e .form .inputfield .textarea:focus,
+  .wrapper_e .form .inputfield .custom_select select:focus{
+    border: 1px solid var(--first-color);
+  }
+  
+  .wrapper_e .form .inputfield p{
+     font-size: 14px;
+     color: #757575;
+  }
+  
+
+  
+  .wrapper_e .form .inputfield:last-child{
+    margin-bottom: 0;
+  }
+  
+  
+  @media (max-width:767px) {
+
+    .wrapper_e{
+      max-width: 400px;
+      width: 100%;
+      background: #fff;
+      margin: 20px auto;
+      box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+      padding: 30px;
+    }
+
+    .wrapper_e .form .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrapper_e .form .inputfield label{
+      margin-bottom: 5px;
+    }
+    .wrapper_e .form .inputfield.terms{
+      flex-direction: row;
+    }
+  }
+
+
+  /* warpper edit area */
+  .wrapper_md_ar{
+    max-width: 700px;
+    width: 100%;
+    background: #C2FFD9; /* สี */
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    padding: 30px;
+  }
+  
+  .wrapper_md_ar .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--first-color);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+
+  .wrapper_md_ar .form{
+    width: 100%;
+  }
+  
+  .wrapper_md_ar .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper_md_ar .form .inputfield label{
+     width: 200px;
+     color: #757575;
+     margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .wrapper_md_ar .form .inputfield .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper_md_ar .form .inputfield .custom_select{
+    position: static;
+    width: 100%;
+    height: 37px;
+  }
+  
+  .wrapper_md_ar .form .inputfield .custom_select select{
+
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  
+  .wrapper_md_ar .form .inputfield .input:focus,
+  .wrapper_md_ar .form .inputfield .textarea:focus,
+  .wrapper_md_ar .form .inputfield .custom_select select:focus{
+    border: 1px solid var(--first-color);
+  }
+  
+  .wrapper_md_ar .form .inputfield p{
+     font-size: 14px;
+     color: #757575;
+  }
+  
+
+  
+  .wrapper_md_ar .form .inputfield:last-child{
+    margin-bottom: 0;
+  }
+  
+  
+  @media (max-width:767px) {
+
+    .wrapper_md_ar{
+      max-width: 400px;
+      width: 100%;
+      background: #fff;
+      margin: 20px auto;
+      box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+      padding: 30px;
+    }
+
+    .wrapper_md_ar .form .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrapper_md_ar .form .inputfield label{
+      margin-bottom: 5px;
+    }
+    .wrapper_md_ar .form .inputfield.terms{
+      flex-direction: row;
+    }
+  }

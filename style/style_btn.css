@@ -1,0 +1,204 @@
+.btn_yes{
+    width: 200px;
+    padding: 5px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #368B85;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .btn_yes:hover{
+    background: #464660;
+    color: #fff;
+  }
+
+  .btn_no{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  red;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .btn_no:hover{
+    background: #464660;
+    color: #fff;
+  }
+
+
+  .btn_b{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #FF6600;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  .btn_b:hover{
+    background: #464660;
+    color: #fff;
+  }
+
+  .btn_gray{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #464660;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  .btn_gray:hover{
+    background: #464660;
+    color: #fff;
+  }
+
+
+  .btn_pri{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #1597E5;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+
+  }
+  .btn_pri:hover{
+    background: #464660;
+    color: #fff;
+  }
+
+  .btn_add_area{
+    width: 200px;
+    padding: 5px 20px;
+    font-size: 18px; 
+    border: 0px;
+    background:  #ff6600;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left:1100px;
+  }
+  
+  .btn_add_area:hover{
+    background: #464660;
+    color: #fff;
+  }
+
+  .btn_no_s{
+    width: 200px;
+    padding: 5px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  red;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .btn_no_s:hover{
+    background: #464660;
+    color: #fff;
+  }
+
+  .btn_search{
+    width: 120px;
+    padding: 5px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #368B85;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    text-align: center;
+    margin-left: 10px;
+  }
+  
+  .btn_search:hover{
+    background: #464660;
+    color: #fff;
+  }
+
+
+  .btn_pdf{
+    width: 80%;
+    padding: 8px 410px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #ff6600;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+
+  }
+  .btn_pdf:hover{
+    background: #464660;
+    color: #fff;
+  }
+
+  /* ชื่อ */
+  .bar_name {
+    position: fixed;
+    top: 67px;
+    right: 5px;
+    width: 220px;
+    height: 38px;
+    background: #D1E8E4;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.bar_name .icon_name {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.bar_name .name {
+    font-size: 14px;
+}
+
+.wrapper .form .inputfield .btn_2 {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background: #1597E5;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  text-align: center;
+}
+
+.wrapper .form .inputfield .btn_2:hover {
+  background: #FF5151;
+}
+
+

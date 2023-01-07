@@ -1,0 +1,97 @@
+       /* wrapper เพิ่มข้อมูล */
+       .wrapper_3 {
+        max-width: 1000px;
+        width: 100%;
+        background: #fff;
+        margin: 20px auto;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+        padding: 30px;
+    }
+
+    .wrapper_3 .title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: var(--first-color);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .wrapper_3 .form {
+        width: 100%;
+    }
+
+    .wrapper_3 .form .inputfield {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .wrapper_3 .form .inputfield label {
+        width: 200px;
+        color: #757575;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .wrapper_3 .form .inputfield .input {
+        width: 80%;
+        outline: none;
+        border: 1px solid #d5dbd9;
+        font-size: 15px;
+        padding: 8px 10px;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    .wrapper_3 .form .inputfield select {
+        outline: none;
+        width: 80%;
+        height: 100%;
+        padding: 8px 10px;
+        font-size: 15px;
+        border: 1px solid #d5dbd9;
+        border-radius: 3px;
+    }
+
+    .wrapper_3 .form .inputfield strong {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .wrapper_3 .form .inputfield .input:focus,
+    .wrapper_3 .form .inputfield .textarea:focus,
+    .wrapper_3 .form .inputfield .custom_select select:focus {
+        border: 1px solid var(--first-color);
+    }
+
+    .wrapper_3 .form .inputfield p {
+        font-size: 14px;
+        color: #757575;
+    }
+
+    .wrapper_3 .form .inputfield .btn {
+        width: 30%;
+        padding: 8px 10px;
+        font-size: 15px;
+
+        background: var(--first-color);
+        color: #fff;
+        cursor: pointer;
+        border-radius: 3px;
+        outline: none;
+        float: right;
+        margin-left: 5px;
+    }
+
+    .wrapper_3 .form .inputfield .btn:hover {
+        background: var(--first-color-light);
+    }
+
+    .wrapper_3 .form .inputfield:last-child {
+        margin-bottom: 0;
+    }
+
+    label strong {
+        color: red;
+        font-size: 20px;
+    }

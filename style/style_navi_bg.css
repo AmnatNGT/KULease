@@ -1,0 +1,604 @@
+    /*Google font*/
+    
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+     :root {
+        /*Colors*/
+        --first-color: #368B85;
+        --first-color-light: #464660;
+        --white-color: #F1E9E5;
+        --body-color: #C2FFD9;
+        --header-height: 7rem;
+    }
+    
+    .header {
+        width: 100%;
+        height: var(--header-height);
+        background-color: var(--first-color);
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+        position: -webkit-sticky;
+	    position: sticky;
+	    top: 0;
+    }
+    
+    .ku {
+        font-size: 1.5rem;
+        color: white;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Nunito', sans-serif;
+        ;
+    }
+    
+    body {
+        min-height: 100vh;
+        background: var(--body-color);
+    }
+    
+    .navigation {
+        position: fixed;
+        width: 60px;
+        height: 100%;
+        background: var(--first-color);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    
+    .navigation:hover,
+    .navigation.active {
+        width: 400px;
+    }
+    
+    .navigation ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    .navigation ul li {
+        position: relative;
+        width: 100%;
+        list-style: none;
+        margin-left: 15px;
+    }
+    
+    .navigation ul li:hover {
+        background: var(--first-color-light);
+    }
+    
+    .navigation ul li a {
+        position: relative;
+        display: none;
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        color: var(--white-color);
+    }
+    
+    .navigation ul li a .icon {
+        position: relative;
+        display: block;
+        min-width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+
+    
+    .navigation ul li a .icon .fa {
+        font-size: 24px;
+    }
+    
+    .navigation ul li a .title {
+        position: relative;
+        display: block;
+        padding: 0 10px;
+        height: 60px;
+        line-height: 60px;
+        text-align: start;
+        white-space: nowrap;
+        width: 200px;
+    }
+    
+    .toggle {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        background: var(--first-color);
+        cursor: pointer;
+    }
+    
+    .toggle.active {
+        background: var(--first-color-light);
+    }
+    
+    .toggle:before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        line-height: 60px;
+        text-align: center;
+        font-size: 24px;
+        color: var(--white-color);
+    }
+    
+    .toggle.active:before {
+        content: '\f00d';
+    }
+    
+    .body .body_b {
+        align-items: center;
+    }
+    
+    .data {
+        padding-top: 50px;
+        padding-inline-start: 80px;
+    }
+    
+    @media (max-width: 767px) {
+        .navigation {
+            left: -60px;
+        }
+        .navigation.active {
+            left: 0px;
+            width: 100%;
+        }
+        .header {
+            width: 100%;
+            height: var(--header-height);
+            background-color: var(--first-color);
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+        .ku {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            position: static;
+            font-size: 1rem;
+        }
+        .data {
+            padding-top: 50px;
+            padding-inline-start: 0;
+            font-size: .5rem;
+        }
+        .toggle {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            background: none;
+            cursor: pointer;
+        }
+        .toggle.active {
+            background: none;
+        }
+    }
+
+    /* table */
+    .wrapper_2 {
+        max-width: 1300px;
+        width: 100%;
+        background: #fff;
+        margin: 20px auto;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+        padding: 30px;
+    }
+    
+    .wrapper_2 .title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: var(--first-color);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .wrapper_2 .form {
+        width: 100%;
+    }
+    
+    .wrapper_2 .form .inputfield {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .wrapper_2 .form .inputfield label {
+        width: 200px;
+        color: #757575;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    
+    .wrapper_2 .form .inputfield .input {
+        width: 100%;
+        outline: none;
+        border: 1px solid #d5dbd9;
+        font-size: 15px;
+        padding: 8px 10px;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    
+    .wrapper_2 .form .inputfield .custom_select {
+        position: static;
+        width: 100%;
+        height: 37px;
+    }
+    
+    .wrapper_2 .form .inputfield .custom_select select {
+        outline: none;
+        width: 100%;
+        height: 100%;
+        padding: 8px 10px;
+        font-size: 15px;
+        border: 1px solid #d5dbd9;
+        border-radius: 3px;
+    }
+    
+    .wrapper_2 .form .inputfield .input:focus,
+    .wrapper_2 .form .inputfield .textarea:focus,
+    .wrapper_2 .form .inputfield .custom_select select:focus {
+        border: 1px solid var(--first-color);
+    }
+    
+    .wrapper_2 .form .inputfield p {
+        font-size: 14px;
+        color: #757575;
+    }
+    
+    .wrapper_2 .form .inputfield .btn {
+        width: 30%;
+        padding: 8px 10px;
+        font-size: 15px;
+        border: 0px;
+        background: var(--first-color);
+        color: #fff;
+        cursor: pointer;
+        border-radius: 3px;
+        outline: none;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .wrapper_2 .form .inputfield .btn:hover {
+        background: var(--first-color-light);
+    }
+    
+    .wrapper_2 .form .inputfield:last-child {
+        margin-bottom: 0;
+    }
+
+    /* css table */
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: var(--first-color);
+        color: white;
+    }
+    /* close css table */
+    
+    @media (max-width:767px) {
+
+
+        .wrapper_2 {
+            max-width: 800px;
+            width: 100%;
+            background: #fff;
+            margin: 20px auto;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+            padding: 30px;
+        }
+        .wrapper_2 .form .inputfield {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .wrapper_2 .form .inputfield label {
+            margin-bottom: 5px;
+        }
+        .wrapper_2 .form .inputfield.terms {
+            flex-direction: row;
+        }
+    }
+
+
+    /* drop down */
+    .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #AA82E0;
+            min-width: 80%;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(54, 54, 54, 0.9);
+            z-index: 1;
+            margin-left: 60px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            height: 36px;
+        }
+
+        .dropdown a:hover {
+            background-color: #464660;
+            cursor: pointer;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .navigation ul li a .icon_d {
+            position: relative;
+            display: block;
+            min-width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: end;
+        }
+
+        .navigation ul li a .icon_d .fa {
+            font-size: 30px;
+        }
+
+        /* wrapper */
+        .wrapper{
+            max-width: 500px;
+            width: 100%;
+            background: #fff; /* สี */
+            margin: 20px auto;
+            box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+            padding: 30px;
+          }
+          
+          .wrapper .title{
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--first-color);
+            text-transform: uppercase;
+            text-align: center;
+          }
+          
+
+          .wrapper .form{
+            width: 100%;
+          }
+          
+          .wrapper .form .inputfield{
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+          }
+          
+          .wrapper .form .inputfield label{
+             width: 200px;
+             color: #757575;
+             margin-right: 10px;
+            font-size: 14px;
+          }
+          
+          .wrapper .form .inputfield .input{
+            width: 100%;
+            outline: none;
+            border: 1px solid #d5dbd9;
+            font-size: 15px;
+            padding: 8px 10px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+          }
+          
+          .wrapper .form .inputfield .custom_select{
+            position: static;
+            width: 100%;
+            height: 37px;
+          }
+          
+          .wrapper .form .inputfield .custom_select select{
+
+            outline: none;
+            width: 100%;
+            height: 100%;
+            padding: 8px 10px;
+            font-size: 15px;
+            border: 1px solid #d5dbd9;
+            border-radius: 3px;
+          }
+          
+          .wrapper .form .inputfield .input:focus,
+          .wrapper .form .inputfield .textarea:focus,
+          .wrapper .form .inputfield .custom_select select:focus{
+            border: 1px solid var(--first-color);
+          }
+          
+          .wrapper .form .inputfield p{
+             font-size: 14px;
+             color: #757575;
+          }
+          
+
+          
+          .wrapper .form .inputfield:last-child{
+            margin-bottom: 0;
+          }
+          
+          
+          @media (max-width:767px) {
+        
+            .wrapper{
+              max-width: 400px;
+              width: 100%;
+              background: #fff;
+              margin: 20px auto;
+              box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+              padding: 30px;
+            }
+        
+            .wrapper .form .inputfield{
+              flex-direction: column;
+              align-items: flex-start;
+            }
+            .wrapper .form .inputfield label{
+              margin-bottom: 5px;
+            }
+            .wrapper .form .inputfield.terms{
+              flex-direction: row;
+            }
+          }
+
+          
+         /* warpper modal */
+          .wrapper_md{
+            max-width: 500px;
+            width: 100%;
+            background: #C2FFD9; /* สี */
+            margin: 20px auto;
+            box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+            padding: 30px;
+          }
+          
+          .wrapper_md .title{
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--first-color);
+            text-transform: uppercase;
+            text-align: center;
+          }
+          
+
+          .wrapper_md .form{
+            width: 100%;
+          }
+          
+          .wrapper_md .form .inputfield{
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+          }
+          
+          .wrapper_md .form .inputfield label{
+             width: 200px;
+             color: #757575;
+             margin-right: 10px;
+            font-size: 14px;
+          }
+          
+          .wrapper_md .form .inputfield .input{
+            width: 100%;
+            outline: none;
+            border: 1px solid #d5dbd9;
+            font-size: 15px;
+            padding: 8px 10px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+          }
+          
+          .wrapper_md .form .inputfield .custom_select{
+            position: static;
+            width: 100%;
+            height: 37px;
+          }
+          
+          .wrapper_md .form .inputfield .custom_select select{
+
+            outline: none;
+            width: 100%;
+            height: 100%;
+            padding: 8px 10px;
+            font-size: 15px;
+            border: 1px solid #d5dbd9;
+            border-radius: 3px;
+          }
+          
+          .wrapper_md .form .inputfield .input:focus,
+          .wrapper_md .form .inputfield .textarea:focus,
+          .wrapper_md .form .inputfield .custom_select select:focus{
+            border: 1px solid var(--first-color);
+          }
+          
+          .wrapper_md .form .inputfield p{
+             font-size: 14px;
+             color: #757575;
+          }
+          
+
+          
+          .wrapper_md .form .inputfield:last-child{
+            margin-bottom: 0;
+          }
+          
+          
+          @media (max-width:767px) {
+        
+            .wrapper_md{
+              max-width: 400px;
+              width: 100%;
+              background: #fff;
+              margin: 20px auto;
+              box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+              padding: 30px;
+            }
+        
+            .wrapper_md .form .inputfield{
+              flex-direction: column;
+              align-items: flex-start;
+            }
+            .wrapper_md .form .inputfield label{
+              margin-bottom: 5px;
+            }
+            .wrapper_md .form .inputfield.terms{
+              flex-direction: row;
+            }
+          }
+
+
+          
+
+
+
+        

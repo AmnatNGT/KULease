@@ -1,0 +1,33 @@
+
+/* ชื่อผู้บริหาร */
+.bar_boss_name {
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    width: 225px;
+    height: 90px;
+    background: #D1E8E4;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    cursor: text;
+}
+
+.bar_boss_name .icon_name {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.bar_boss_name .name {
+    font-size: 14px;
+}
+
+/* ใช้กับผู้เช่า ถ้าจอเล็กลงน้อยว่า ipad pro ให้ชื่อมุมขวาบนหายไป */
+
+@media (max-width: 1000px) {
+    .bar_boss_name {
+        display: none;
+    }
+
+}
