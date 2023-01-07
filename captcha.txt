@@ -1,0 +1,23 @@
+Recaptcha ใช้ของ Google
+
+Username : kulease2565kps@gmail.com
+Password : KuLease2565
+
+เป็น email ของระบบนี้
+
+ถ้าเราเปลี่ยน Email ให้ไปสร้าง key Recaptcha ใหม่ และนำ Key เปลี่ยนที่หน้า
+1.1 index.php
+1.2 08_login_logout_db --> logindb.php
+
+Folder 01_register
+Folder boss
+2.1 ofc_register.php
+2.2 ofc_register_db.php
+
+Folder ofc
+3.1 ofc_register.php
+3.2 ofc_register_db.php
+
+Folder tn
+4.1 tn_register.php
+4.2 tn_register_db.php
